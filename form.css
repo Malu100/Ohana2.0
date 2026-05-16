@@ -1,0 +1,127 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #FFFAF0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.container {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #708090;
+  margin-bottom: 24px;
+  font-size: 1.6rem;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #c2185b;
+}
+
+textarea { resize: vertical; min-height: 80px; }
+
+button {
+  margin-top: 24px;
+  width: 100%;
+  padding: 12px;
+  background: #708090;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover { background: #B0C4DE; }
+
+#mensagem {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+  color: #2e7d32;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas no celular */
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card-peca {
+  cursor: pointer;
+  position: relative;
+}
+
+/* Esconde a bolinha do rádio original */
+.card-peca input[type="radio"] {
+  display: none;
+}
+
+.card-conteudo {
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.card-conteudo img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.card-conteudo span {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card-conteudo small {
+  color: #708090;
+  font-weight: bold;
+}
+
+/* Efeito quando o cliente seleciona a peça */
+.card-peca input[type="checkbox"]:checked + .card-conteudo {
+  border-color: #708090;
+  background-color: #B0C4DE70;
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(194, 24, 91, 0.1);
+}

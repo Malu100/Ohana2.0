@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css" />
+    <title>Ohana</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Faça seu Pedido</h1>
+    <form id="formPedido">
+      
+      <label>Nome completo</label>
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      
+       <label>Telefone / WhatsApp</label>
+      <input type="tel" name="telefone" placeholder="(00) 00000-0000" required />
+
+      <label>Endereço de entrega</label>
+      <textarea name="endereco" placeholder="Rua, número, bairro, cidade..." required></textarea>
+
+      <label>Selecione as Peças</label>
+      <div class="catalogo-grid">
+
+        <!-- REMOVIDO O 'required' DAQUI -->
+        <label class="card-peca">
+          <input type="checkbox" name="peca" value="Moletom Quiksilver" data-preco="150.00">
+          <div class="card-conteudo">
+            <img src="https://www.overboard.com.br/moletom-masculino-quiksilver-full-logo-0477312015/p" alt="Moletom">
+            <span>Moletom Quiksilver</span>
+            <small>R$ 150,00</small>
+          </div>
+        </label>
+
+        <label class="card-peca">
+          <input type="checkbox" name="peca" value="Camisa Oakley" data-preco="60.90">
+          <div class="card-conteudo">
+            <img src="https://www.backwash.com.br/produto/camiseta-oakley-o-bark-ss-tee-color-white-90322" alt="Camisa">
+            <span>Camisa Oakley</span>
+            <small>R$ 60,90</small>
+          </div>
+        </label>
+        
+        <label class="card-peca">
+          <!-- CORRIGIDO DE 180,00 PARA 180.00 -->
+          <input type="checkbox" name="peca" value="Chinelo Oakley" data-preco="180.00">
+          <div class="card-conteudo">
+            <img src="https://static.netshoes.com.br/produtos/chinelo-oakley-rest-masculino/06/D63-5315-006/D63-5315-006_zoom1.jpg" alt="Chinelo">
+            <span>Chinelo Oakley</span>
+            <small>R$ 180,00</small>
+          </div>
+        </label>
+      </div>
+
+      <label>Preço Total (R$ )</label>
+      <input type="text" name="preco" id="inputPreco" value="0.00" readonly />
+      
+      <label>Tamanho</label>
+      <select name="tamanho" required>
+        <option value="">Selecione</option>
+        <option>PP</option>
+        <option>P</option>
+        <option>M</option>
+        <option>G</option>
+        <option>GG</option>
+        <option>XGG</option>
+      </select>
+
+      <button type="submit">Enviar Pedido</button>
+      
+    </form>
+    <p id="mensagem"></p>
+  </div>
+  <script src="form.js"></script>
+
+
+</body>
+</html>
