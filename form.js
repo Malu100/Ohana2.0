@@ -37,7 +37,8 @@ form.addEventListener("submit", async function (e) {
     "TELEFONE":  form.telefone.value,
     "ENDEREÇO":  form.endereco.value,
     "PEÇA":      info.pecas,
-    "PREÇO":     info.total.replace(".", ",") 
+    "PREÇO":     info.total.replace(".", ","),
+    "PAGAMENTO": form.pagamento.value // <-- Nova linha aqui!
   };
 
 

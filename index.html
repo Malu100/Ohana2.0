@@ -33,10 +33,10 @@
             <small>R$ 240,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
 
             
@@ -51,10 +51,10 @@
             <small>R$ 80,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -68,10 +68,10 @@
             <small>R$ 150,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -85,10 +85,10 @@
             <small>R$ 160,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -102,10 +102,10 @@
             <small>R$ 100,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -120,10 +120,10 @@
             <small>R$ 170,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -138,10 +138,10 @@
             <small>R$ 80,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -155,10 +155,10 @@
             <small>R$ 120,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -173,10 +173,10 @@
             <small>R$ 100,00</small>
 
             <select class="select-tamanho-item">
-                      <option value="P">P</option>
                       <option value="M">M</option>
                       <option value="G">G</option>
                       <option value="GG">GG</option>
+                      <option value="G1">G1</option>
             </select>
             
           </div>
@@ -202,6 +202,17 @@
           </div>
         </label>
       </div>
+
+      <label>Forma de Pagamento</label>
+      <select name="pagamento" required>
+        <option value="">Selecione...</option>
+        <option value="Pix">Pix</option>
+        <option value="Cartão de Crédito">Cartão de Crédito (com juros da maquininha)</option>
+        <option value="Cartão de Débito">Cartão de Débito</option>
+        <option value="Dinheiro">Dinheiro</option>
+      </select>
+
+
 
       <label>Preço Total (R$ )</label>
       <input type="text" name="preco" id="inputPreco" value="0.00" readonly />
